@@ -42,14 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\DataStatus.cs" />
+    <Compile Include="Enums\OdaTipi.cs" />
+    <Compile Include="Models\AppUserProfile.cs" />
     <Compile Include="Models\BaseEntity.cs" />
-    <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\Maid.cs" />
-    <Compile Include="Models\Room.cs" />
-    <Compile Include="Models\Reservation.cs" />
-    <Compile Include="Models\RoomMaid.cs" />
-    <Compile Include="Models\RoomReservation.cs" />
-    <Compile Include="Models\RoomType.cs" />
+    <Compile Include="Models\AppUser.cs" />
+    <Compile Include="Models\Oda.cs" />
+    <Compile Include="Models\Rezervasyon.cs" />
+    <Compile Include="Models\OdaRezervasyonu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
