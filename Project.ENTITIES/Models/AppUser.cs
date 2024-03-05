@@ -14,7 +14,7 @@ namespace Project.ENTITIES.Models
         //Relational Properties
         public virtual AppUserProfile Profile { get; set; }
 
-        public virtual List<Rezervasyon> Rezervasyon { get; set; }
+        public virtual List<Reservation> Reservations { get; set; }
 
 
     }

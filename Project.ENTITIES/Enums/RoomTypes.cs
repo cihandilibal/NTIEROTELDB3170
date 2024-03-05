@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Enums
 {
-    public enum OdaTipi
+    public enum RoomTypes
     {
-        TekKisilik,
-        IkiKisilik,
-        UcKisilik,
-        Suit,
-        AileOdasi,
-       
-
+        SingleRoom,
+        DoubleRoom,
+        TripleRoom,
+        SuitRoom,
+        FamilySuitRoom    
     }
 }

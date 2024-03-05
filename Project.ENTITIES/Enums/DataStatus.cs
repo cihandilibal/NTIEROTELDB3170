@@ -10,6 +10,6 @@ namespace Project.ENTITIES.Enums
     {
         Inserted = 1,
         Updated = 2,
-        Deleed = 3
+        Deleted = 3
     }
 }
