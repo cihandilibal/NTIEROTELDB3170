@@ -15,6 +15,7 @@ namespace Project.ENTITIES.Models
         public DateTime AyrilisTarihi { get; set; }
         public int KalisSuresi { get; set; }
         public OdaTipi OdaTipi { get; set; }
+        public int OdaSayisi { get; set; }
         public int KisiSayisi { get; set; }
         public decimal Fiyat { get; set; }
         
@@ -26,25 +27,9 @@ namespace Project.ENTITIES.Models
         public void Payment()
         {
             Fiyat = 0;
-            switch (OdaTipi)
-            {
-                case OdaTipi.TekKisilik:
-                    Fiyat = 200;
-                    break;
-                case OdaTipi.IkiKisilik:
-                    Fiyat = 400;
-                    break;
-                case OdaTipi.UcKisilik:
-                    Fiyat = 600;
-                    break;
-                case OdaTipi.Suit:
-                    Fiyat = 750;
-                    break;
-                case OdaTipi.AileOdasi:
-                    Fiyat = 800;
-                    break;
-            }
+          
             Fiyat *= KalisSuresi;
+            Fiyat *= OdaSayisi;
         }
 
     }
