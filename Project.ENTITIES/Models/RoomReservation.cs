@@ -11,7 +11,7 @@ namespace Project.ENTITIES.Models
         public int RoomID { get; set; }
         public int ReservationID { get; set; }
 
-        // Realational Properties
+        // Relational Properties
         public virtual Room Room { get; set; }
         public virtual Reservation Reservation { get; set; }
 

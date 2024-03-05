@@ -18,28 +18,8 @@ namespace Project.ENTITIES.Models
 
         public virtual List<RoomReservation> RoomReservations { get; set; }
 
-        public void Tutar()
-        {
-            Price = 0;
-            switch (RoomTypes)
-            {
-                case RoomTypes.SingleRoom:
-                    Price += 200;
-                    break;
-                case RoomTypes.DoubleRoom:
-                    Price += 400;
-                    break;
-                case RoomTypes.TripleRoom:
-                    Price += 600;
-                    break;
-                case RoomTypes.SuitRoom:
-                    Price += 750;
-                    break;
-                case RoomTypes.FamilySuitRoom:
-                    Price += 800;
-                    break;
-            }
+        
 
-        }
+        
     }
 }

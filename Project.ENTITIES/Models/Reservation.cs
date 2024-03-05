@@ -20,15 +20,40 @@ namespace Project.ENTITIES.Models
         public decimal Price { get; set; }
         
 
-        // Realational Properties
+        // Relational Properties
         public virtual AppUser AppUser { get; set; }
         public virtual List<RoomReservation> RoomReservations { get; set; }
 
+
+        
         public void Payment()
         {
             Price = 0;
-          
+
+            switch (RoomTypes)
+            {
+                case RoomTypes.SingleRoom:
+                     Price += 200;
+                break;
+
+                case RoomTypes.DoubleRoom:
+                     Price += 400;
+                break;
+
+            case RoomTypes.TripleRoom:
+                 Price += 600;
+                 break;
+
+            case RoomTypes.SuitRoom:
+                 Price += 750;
+            break;
+
+            case RoomTypes.FamilySuitRoom:
+                 Price += 800;
+            break;
+            }
             Price *= StayLength;
+
             Price *= RoomCount;
         }
 

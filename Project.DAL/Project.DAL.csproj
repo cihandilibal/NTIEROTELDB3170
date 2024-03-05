@@ -51,11 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContextClasses\MyContext.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project.CONF\Project.CONF.csproj">
+      <Project>{75660b2e-a4a3-49cc-b109-1c66facfd8ce}</Project>
+      <Name>Project.CONF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project.ENTITIES\Project.ENTITIES.csproj">
+      <Project>{ebc76287-c0f7-498e-b7b1-2f2552725f68}</Project>
+      <Name>Project.ENTITIES</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
